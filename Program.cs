@@ -8,7 +8,10 @@ namespace todolist
 {
     static class Program
     {
-        // hello
+        /// <summary>
+        ///  hi
+        ///  hello
+        /// </summary>
         [STAThread]
         static void Main()
         {
