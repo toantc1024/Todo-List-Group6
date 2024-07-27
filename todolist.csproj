@@ -443,5 +443,59 @@
   <ItemGroup>
     <None Include="Resources\study.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2811%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event-planner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com has.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com has1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2811%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2811%29qes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shnm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wgahdbsjxnz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done_119204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_105065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo-social-web-network-internet_262_icon-icons.com_61518.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643781-check-checklist-complete-done-mark_113406.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canceltheapplication_cancelar_2901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savetheapplication_guardar_2958.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
