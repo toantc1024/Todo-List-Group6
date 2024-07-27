@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace todolist.VIEW.US
 {
-    public partial class schedule : UserControl
+    public partial class viewbymonth : UserControl
     {
-        public schedule()
+        public viewbymonth()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
