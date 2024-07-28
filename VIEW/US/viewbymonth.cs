@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace todolist.VIEW.US
 {
-    public partial class tomorrow : UserControl
+    public partial class viewbymonth : UserControl
     {
-        public tomorrow()
+        public viewbymonth()
         {
             InitializeComponent();
         }

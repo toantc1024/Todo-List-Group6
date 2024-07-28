@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace todolist.VIEW.US
+namespace todolist.VIEW
 {
-    public partial class note : UserControl
+    public partial class priority : Form
     {
-        public note()
+        public priority()
         {
             InitializeComponent();
         }

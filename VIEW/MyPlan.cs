@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace todolist
+namespace todolist.VIEW
 {
-    public partial class Form1 : Form
+    public partial class MyPlan : Form
     {
-        public Form1()
+        public MyPlan()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox21_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
