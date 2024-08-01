@@ -1,6 +1,6 @@
 ﻿namespace todolist.VIEW.UC
 {
-    partial class myPlan
+    partial class finished
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,9 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lvwMyPlan = new System.Windows.Forms.ListView();
+            this.StartTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.EndTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Priority = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dtpMyPlan = new System.Windows.Forms.DateTimePicker();
+            this.chkSelectUnselect = new Guna.UI2.WinForms.Guna2CheckBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -39,6 +43,7 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -51,46 +56,92 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
-            this.panel1.Location = new System.Drawing.Point(30, 67);
+            this.panel1.Controls.Add(this.lvwMyPlan);
+            this.panel1.Location = new System.Drawing.Point(57, 59);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(743, 342);
+            this.panel1.Size = new System.Drawing.Size(675, 355);
             this.panel1.TabIndex = 57;
             // 
-            // dateTimePicker1
+            // lvwMyPlan
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HighlightText;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(675, 26);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(98, 20);
-            this.dateTimePicker1.TabIndex = 56;
+            this.lvwMyPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.lvwMyPlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvwMyPlan.CheckBoxes = true;
+            this.lvwMyPlan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.StartTime,
+            this.EndTime,
+            this.Description,
+            this.Priority});
+            this.lvwMyPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwMyPlan.GridLines = true;
+            this.lvwMyPlan.HideSelection = false;
+            this.lvwMyPlan.LabelEdit = true;
+            this.lvwMyPlan.Location = new System.Drawing.Point(0, 0);
+            this.lvwMyPlan.Margin = new System.Windows.Forms.Padding(2);
+            this.lvwMyPlan.Name = "lvwMyPlan";
+            this.lvwMyPlan.Size = new System.Drawing.Size(675, 355);
+            this.lvwMyPlan.TabIndex = 45;
+            this.lvwMyPlan.UseCompatibleStateImageBehavior = false;
+            this.lvwMyPlan.View = System.Windows.Forms.View.Details;
+            this.lvwMyPlan.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvwMyPlan_ItemChecked);
+            this.lvwMyPlan.SelectedIndexChanged += new System.EventHandler(this.lvwMyPlan_SelectedIndexChanged);
             // 
-            // button2
+            // StartTime
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(379, 19);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 29);
-            this.button2.TabIndex = 48;
-            this.button2.Text = "View by year";
-            this.button2.UseVisualStyleBackColor = false;
+            this.StartTime.Tag = "StartTime";
+            this.StartTime.Text = "StartTime";
+            this.StartTime.Width = 120;
             // 
-            // button1
+            // EndTime
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(527, 19);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 29);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "View by month";
-            this.button1.UseVisualStyleBackColor = false;
+            this.EndTime.Text = "EndTime";
+            this.EndTime.Width = 120;
+            // 
+            // Description
+            // 
+            this.Description.Tag = "Description";
+            this.Description.Text = "Description";
+            this.Description.Width = 350;
+            // 
+            // Priority
+            // 
+            this.Priority.Tag = "Priority";
+            this.Priority.Text = "Priority";
+            this.Priority.Width = 100;
+            // 
+            // dtpMyPlan
+            // 
+            this.dtpMyPlan.CalendarMonthBackground = System.Drawing.SystemColors.HighlightText;
+            this.dtpMyPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpMyPlan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpMyPlan.Location = new System.Drawing.Point(666, 21);
+            this.dtpMyPlan.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpMyPlan.Name = "dtpMyPlan";
+            this.dtpMyPlan.Size = new System.Drawing.Size(98, 20);
+            this.dtpMyPlan.TabIndex = 56;
+            this.dtpMyPlan.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // chkSelectUnselect
+            // 
+            this.chkSelectUnselect.AutoSize = true;
+            this.chkSelectUnselect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
+            this.chkSelectUnselect.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkSelectUnselect.CheckedState.BorderRadius = 0;
+            this.chkSelectUnselect.CheckedState.BorderThickness = 0;
+            this.chkSelectUnselect.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkSelectUnselect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSelectUnselect.Location = new System.Drawing.Point(396, 21);
+            this.chkSelectUnselect.Name = "chkSelectUnselect";
+            this.chkSelectUnselect.Size = new System.Drawing.Size(170, 19);
+            this.chkSelectUnselect.TabIndex = 49;
+            this.chkSelectUnselect.Text = "Select all/ Unselect all";
+            this.chkSelectUnselect.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkSelectUnselect.UncheckedState.BorderRadius = 0;
+            this.chkSelectUnselect.UncheckedState.BorderThickness = 0;
+            this.chkSelectUnselect.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkSelectUnselect.UseVisualStyleBackColor = false;
+            this.chkSelectUnselect.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
             // 
             // pictureBox16
             // 
@@ -169,13 +220,14 @@
             this.pictureBox10.TabIndex = 49;
             this.pictureBox10.TabStop = false;
             // 
-            // myPlan
+            // finished
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.chkSelectUnselect);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpMyPlan);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
@@ -183,10 +235,9 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "myPlan";
+            this.Name = "finished";
             this.Size = new System.Drawing.Size(809, 427);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -195,13 +246,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpMyPlan;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
@@ -209,7 +261,11 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView lvwMyPlan;
+        private System.Windows.Forms.ColumnHeader StartTime;
+        private System.Windows.Forms.ColumnHeader Description;
+        private System.Windows.Forms.ColumnHeader Priority;
+        private Guna.UI2.WinForms.Guna2CheckBox chkSelectUnselect;
+        private System.Windows.Forms.ColumnHeader EndTime;
     }
 }

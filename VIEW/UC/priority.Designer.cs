@@ -32,8 +32,9 @@
             this.btnHighest = new System.Windows.Forms.Button();
             this.lvwPriority = new System.Windows.Forms.ListView();
             this.prior = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.timepr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.StartTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.reminderpr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.EndTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dtpPriority = new System.Windows.Forms.DateTimePicker();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -83,7 +84,8 @@
             this.lvwPriority.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvwPriority.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.prior,
-            this.timepr,
+            this.StartTime,
+            this.EndTime,
             this.reminderpr});
             this.lvwPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwPriority.GridLines = true;
@@ -102,15 +104,20 @@
             this.prior.Text = "Priority";
             this.prior.Width = 73;
             // 
-            // timepr
+            // StartTime
             // 
-            this.timepr.Text = "Time";
-            this.timepr.Width = 100;
+            this.StartTime.Text = "StartTime";
+            this.StartTime.Width = 100;
             // 
             // reminderpr
             // 
             this.reminderpr.Text = "Description";
-            this.reminderpr.Width = 515;
+            this.reminderpr.Width = 400;
+            // 
+            // EndTime
+            // 
+            this.EndTime.Text = "EndTime";
+            this.EndTime.Width = 120;
             // 
             // dtpPriority
             // 
@@ -236,7 +243,7 @@
         private System.Windows.Forms.Button btnHighest;
         private System.Windows.Forms.ListView lvwPriority;
         private System.Windows.Forms.ColumnHeader prior;
-        private System.Windows.Forms.ColumnHeader timepr;
+        private System.Windows.Forms.ColumnHeader StartTime;
         private System.Windows.Forms.ColumnHeader reminderpr;
         private System.Windows.Forms.DateTimePicker dtpPriority;
         private System.Windows.Forms.PictureBox pictureBox16;
@@ -246,5 +253,6 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.ColumnHeader EndTime;
     }
 }
