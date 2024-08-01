@@ -295,6 +295,12 @@
     <Compile Include="VIEW\UC\priority.Designer.cs">
       <DependentUpon>priority.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEW\UC\reminder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VIEW\UC\reminder.Designer.cs">
+      <DependentUpon>reminder.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\UC\today.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -319,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\UC\priority.resx">
       <DependentUpon>priority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\UC\reminder.resx">
+      <DependentUpon>reminder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\UC\today.resx">
       <DependentUpon>today.cs</DependentUpon>
