@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\finished.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\finished.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\taskstatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:taskstatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\today.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\today.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\dao\\taskdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:dao\\taskdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,88 +31,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "finished.cs [Design]",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\finished.cs",
-              "RelativeDocumentMoniker": "VIEW\\UC\\finished.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\finished.cs [Design]",
-              "RelativeToolTip": "VIEW\\UC\\finished.cs [Design]",
+              "Title": "TaskStateManager.cs",
+              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskStateManager.cs",
+              "RelativeDocumentMoniker": "TaskStateManager.cs",
+              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskStateManager.cs",
+              "RelativeToolTip": "TaskStateManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:54:56.56Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "priority.cs [Design]",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\priority.cs",
-              "RelativeDocumentMoniker": "VIEW\\UC\\priority.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\priority.cs [Design]",
-              "RelativeToolTip": "VIEW\\UC\\priority.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:54:55.684Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Fmain.cs [Design]",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\Fmain.cs",
-              "RelativeDocumentMoniker": "VIEW\\Fmain.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\Fmain.cs [Design]",
-              "RelativeToolTip": "VIEW\\Fmain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:54:52.463Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "today.cs [Design]",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\today.cs",
-              "RelativeDocumentMoniker": "VIEW\\UC\\today.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\today.cs [Design]",
-              "RelativeToolTip": "VIEW\\UC\\today.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:54:51.75Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "priority.cs",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\priority.cs",
-              "RelativeDocumentMoniker": "VIEW\\UC\\priority.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\priority.cs",
-              "RelativeToolTip": "VIEW\\UC\\priority.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwBIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:40:48.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "reminder.cs",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs",
-              "RelativeDocumentMoniker": "VIEW\\UC\\reminder.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs",
-              "RelativeToolTip": "VIEW\\UC\\reminder.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAiwD0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:40:37.273Z",
+              "WhenOpened": "2024-08-04T06:52:54.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "reminder.cs [Design]",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs",
-              "RelativeDocumentMoniker": "VIEW\\UC\\reminder.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs [Design]",
-              "RelativeToolTip": "VIEW\\UC\\reminder.cs [Design]",
+              "Title": "TaskModel.cs",
+              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskModel.cs",
+              "RelativeDocumentMoniker": "TaskModel.cs",
+              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskModel.cs",
+              "RelativeToolTip": "TaskModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:29:46.472Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-04T06:52:49.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskDAO.cs",
+              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\DAO\\TaskDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\TaskDAO.cs",
+              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\DAO\\TaskDAO.cs",
+              "RelativeToolTip": "DAO\\TaskDAO.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:52:25.056Z",
+              "EditorCaption": ""
             }
           ]
         }
