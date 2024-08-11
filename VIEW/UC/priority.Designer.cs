@@ -33,8 +33,9 @@
             this.lvwPriority = new System.Windows.Forms.ListView();
             this.prior = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.StartTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.reminderpr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.EndTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.reminderpr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dtpPriority = new System.Windows.Forms.DateTimePicker();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -56,10 +57,10 @@
             // 
             this.btnLowest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.btnLowest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLowest.Location = new System.Drawing.Point(703, 249);
-            this.btnLowest.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLowest.Location = new System.Drawing.Point(937, 306);
+            this.btnLowest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLowest.Name = "btnLowest";
-            this.btnLowest.Size = new System.Drawing.Size(85, 65);
+            this.btnLowest.Size = new System.Drawing.Size(113, 80);
             this.btnLowest.TabIndex = 46;
             this.btnLowest.Text = "Lowest priority";
             this.btnLowest.UseVisualStyleBackColor = false;
@@ -69,10 +70,10 @@
             // 
             this.btnHighest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(255)))));
             this.btnHighest.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHighest.Location = new System.Drawing.Point(703, 125);
-            this.btnHighest.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHighest.Location = new System.Drawing.Point(937, 154);
+            this.btnHighest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHighest.Name = "btnHighest";
-            this.btnHighest.Size = new System.Drawing.Size(85, 62);
+            this.btnHighest.Size = new System.Drawing.Size(113, 76);
             this.btnHighest.TabIndex = 45;
             this.btnHighest.Text = "Highest Priority";
             this.btnHighest.UseVisualStyleBackColor = false;
@@ -86,15 +87,16 @@
             this.prior,
             this.StartTime,
             this.EndTime,
+            this.Title,
             this.reminderpr});
             this.lvwPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwPriority.GridLines = true;
             this.lvwPriority.HideSelection = false;
             this.lvwPriority.LabelEdit = true;
-            this.lvwPriority.Location = new System.Drawing.Point(49, 64);
-            this.lvwPriority.Margin = new System.Windows.Forms.Padding(2);
+            this.lvwPriority.Location = new System.Drawing.Point(65, 79);
+            this.lvwPriority.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lvwPriority.Name = "lvwPriority";
-            this.lvwPriority.Size = new System.Drawing.Size(630, 336);
+            this.lvwPriority.Size = new System.Drawing.Size(840, 414);
             this.lvwPriority.TabIndex = 44;
             this.lvwPriority.UseCompatibleStateImageBehavior = false;
             this.lvwPriority.View = System.Windows.Forms.View.Details;
@@ -102,42 +104,47 @@
             // prior
             // 
             this.prior.Text = "Priority";
-            this.prior.Width = 73;
+            this.prior.Width = 50;
             // 
             // StartTime
             // 
             this.StartTime.Text = "StartTime";
-            this.StartTime.Width = 100;
+            this.StartTime.Width = 160;
+            // 
+            // EndTime
+            // 
+            this.EndTime.Text = "EndTime";
+            this.EndTime.Width = 160;
+            // 
+            // Title
+            // 
+            this.Title.Text = "Title";
+            this.Title.Width = 100;
             // 
             // reminderpr
             // 
             this.reminderpr.Text = "Description";
             this.reminderpr.Width = 400;
             // 
-            // EndTime
-            // 
-            this.EndTime.Text = "EndTime";
-            this.EndTime.Width = 120;
-            // 
             // dtpPriority
             // 
             this.dtpPriority.CalendarMonthBackground = System.Drawing.SystemColors.HighlightText;
             this.dtpPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpPriority.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPriority.Location = new System.Drawing.Point(690, 25);
-            this.dtpPriority.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpPriority.Location = new System.Drawing.Point(920, 31);
+            this.dtpPriority.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpPriority.Name = "dtpPriority";
-            this.dtpPriority.Size = new System.Drawing.Size(98, 20);
+            this.dtpPriority.Size = new System.Drawing.Size(129, 23);
             this.dtpPriority.TabIndex = 43;
             this.dtpPriority.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // pictureBox16
             // 
             this.pictureBox16.Image = global::todolist.Properties.Resources.wt___Copy7;
-            this.pictureBox16.Location = new System.Drawing.Point(220, 13);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox16.Location = new System.Drawing.Point(293, 16);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox16.Size = new System.Drawing.Size(47, 39);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 42;
             this.pictureBox16.TabStop = false;
@@ -145,10 +152,10 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::todolist.Properties.Resources.wt___Copy5;
-            this.pictureBox15.Location = new System.Drawing.Point(180, 13);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox15.Location = new System.Drawing.Point(240, 16);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox15.Size = new System.Drawing.Size(47, 39);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 41;
             this.pictureBox15.TabStop = false;
@@ -156,10 +163,10 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::todolist.Properties.Resources.wt___Copy4;
-            this.pictureBox14.Location = new System.Drawing.Point(141, 13);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox14.Location = new System.Drawing.Point(188, 16);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox14.Size = new System.Drawing.Size(47, 39);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 40;
             this.pictureBox14.TabStop = false;
@@ -167,10 +174,10 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::todolist.Properties.Resources.wt___Copy;
-            this.pictureBox13.Location = new System.Drawing.Point(259, 13);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox13.Location = new System.Drawing.Point(345, 16);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(33, 30);
+            this.pictureBox13.Size = new System.Drawing.Size(44, 37);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 39;
             this.pictureBox13.TabStop = false;
@@ -178,10 +185,10 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::todolist.Properties.Resources.wt___Copy2;
-            this.pictureBox12.Location = new System.Drawing.Point(94, 10);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Location = new System.Drawing.Point(125, 12);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(43, 42);
+            this.pictureBox12.Size = new System.Drawing.Size(57, 52);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 38;
             this.pictureBox12.TabStop = false;
@@ -189,10 +196,10 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::todolist.Properties.Resources.wt___Copy3;
-            this.pictureBox11.Location = new System.Drawing.Point(60, 13);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox11.Location = new System.Drawing.Point(80, 16);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox11.Size = new System.Drawing.Size(47, 39);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 37;
             this.pictureBox11.TabStop = false;
@@ -200,17 +207,17 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::todolist.Properties.Resources.wt___Copy1;
-            this.pictureBox10.Location = new System.Drawing.Point(21, 13);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Location = new System.Drawing.Point(28, 16);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox10.Size = new System.Drawing.Size(47, 39);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 36;
             this.pictureBox10.TabStop = false;
             // 
             // priority
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(242)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.btnLowest);
@@ -224,8 +231,9 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "priority";
-            this.Size = new System.Drawing.Size(809, 427);
+            this.Size = new System.Drawing.Size(1079, 526);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -254,5 +262,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.ColumnHeader EndTime;
+        private System.Windows.Forms.ColumnHeader Title;
     }
 }

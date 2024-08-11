@@ -29,6 +29,7 @@ namespace todolist.VIEW.UC
             string starttime = dtpStartTime.Value.ToString("yyyy-MM-dd HH:mm:ss");
             string endtime = dtpEndTime.Value.ToString("yyyy-MM-dd HH:mm:ss");
             string description = txtDescription.Text;
+            string title = cmbTitle.SelectedItem.ToString();
             string priority = getSelectedPriority();
             bool isChecked = false;
 
@@ -44,12 +45,12 @@ namespace todolist.VIEW.UC
                     if (id > 0)
                     {
                         // Update existing task
-                        TaskDAO.Instance.updateTask(id, starttime, endtime, description, priority, isChecked);
+                        TaskDAO.Instance.updateTask(id, starttime, endtime,title, description, priority, isChecked);
                     }
                     else
                     {
                         // Add new task
-                        TaskDAO.Instance.addTask(starttime, endtime, description, priority, isChecked);
+                        TaskDAO.Instance.addTask(starttime, endtime, title,description, priority, isChecked);
                     }
                     LoadDataToListView();
                 }
@@ -88,6 +89,10 @@ namespace todolist.VIEW.UC
             rdo2.Checked = false;
             rdo3.Checked = false;
             rdo4.Checked = false;
+            if (cmbTitle.Items.Count > 0)
+            {
+                cmbTitle.SelectedIndex = 0;
+            }
         }
 
 
@@ -99,10 +104,21 @@ namespace todolist.VIEW.UC
                 ListViewItem selectedItem = lvwToday.SelectedItems[0];
                 dtpStartTime.Text = selectedItem.SubItems[0].Text;
                 dtpEndTime.Text = selectedItem.SubItems[1].Text;
-                txtDescription.Text = selectedItem.SubItems[2].Text;
-                string priority = selectedItem.SubItems[3].Text;
+                string title = selectedItem.SubItems[2].Text;
+                txtDescription.Text = selectedItem.SubItems[3].Text;
+                string priority = selectedItem.SubItems[4].Text;
 
-                if(priority == "I")
+                int titleIndex = cmbTitle.Items.IndexOf(title);
+                if (titleIndex >= 0)
+                {
+                    cmbTitle.SelectedIndex = titleIndex;
+                }
+                else
+                {
+                    cmbTitle.SelectedIndex = -1; 
+                }
+
+                if (priority == "I")
                 {
                     rdo1.Checked = true;
                 }
@@ -125,6 +141,8 @@ namespace todolist.VIEW.UC
                     rdo3.Checked = false;
                     rdo4.Checked = false;
                 }
+
+
             }
             else
             {
@@ -167,6 +185,7 @@ namespace todolist.VIEW.UC
                 {
                     row["StartTime"].ToString(),
                     row["EndTime"].ToString(),
+                    row["Title"].ToString(),
                     row["Description"].ToString(),
                     row["Priority"].ToString()
                 };
@@ -177,5 +196,9 @@ namespace todolist.VIEW.UC
             lvwToday.Refresh();
         }
 
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

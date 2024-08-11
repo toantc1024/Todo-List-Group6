@@ -19,6 +19,8 @@ namespace todolist.VIEW.UC
             InitializeComponent();
             dtpReminder.ValueChanged += dtpReminder_ValueChanged;
             LoadTaskByDate(dtpReminder.Value);
+
+
             Timer timer = new Timer();
             timer.Interval = 60000; 
             timer.Tick += new EventHandler(tmrReminder_Tick);
@@ -33,12 +35,13 @@ namespace todolist.VIEW.UC
                 DateTime taskDateTime = DateTime.Parse(row["StartTime"].ToString());
                 DateTime endDateTime = DateTime.Parse(row["EndTime"].ToString());
 
-                if (taskDateTime.Date == selectedDate.Date)
+                if (endDateTime.Date == selectedDate.Date)
                 {
                     string[] listViewRow =
                 {
-                    taskDateTime.ToString("HH:mm:ss"),
-                    endDateTime.ToString("HH:mm:ss"),
+                    taskDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                    endDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                    row["Title"].ToString(),
                     row["Description"].ToString(),
                     row["Priority"].ToString(),
                 };
@@ -66,9 +69,10 @@ namespace todolist.VIEW.UC
                 if (isValidDate)
                 {
 
-                    if (deadline <= now.AddMinutes(5) && deadline > now) 
+                    if (now >= deadline.AddMinutes(-5) && deadline > now) 
                     {
-                        MessageBox.Show($"The task '{item.SubItems[2].Text}' is comming soon at {deadline}.", "Remind");
+                        MessageBox.Show($"The task '{item.SubItems[3].Text}' is comming soon at {deadline}.", "Remind");
+                        
                     }
                 }
             }

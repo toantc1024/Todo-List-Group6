@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\taskstatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:taskstatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\dao\\taskdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:dao\\taskdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|d:\\to do list\\todolist\\todolist\\todo-list-group6\\view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9242AE3B-460E-470F-928E-D2E087C424C1}|todolist.csproj|solutionrelative:view\\uc\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TaskStateManager.cs",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskStateManager.cs",
-              "RelativeDocumentMoniker": "TaskStateManager.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskStateManager.cs",
-              "RelativeToolTip": "TaskStateManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Title": "reminder.cs [Design]",
+              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs",
+              "RelativeDocumentMoniker": "VIEW\\UC\\reminder.cs",
+              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs [Design]",
+              "RelativeToolTip": "VIEW\\UC\\reminder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:52:54.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-11T10:07:28.748Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaskModel.cs",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskModel.cs",
-              "RelativeDocumentMoniker": "TaskModel.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\TaskModel.cs",
-              "RelativeToolTip": "TaskModel.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCoAAAAAAAAA",
+              "Title": "reminder.cs",
+              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs",
+              "RelativeDocumentMoniker": "VIEW\\UC\\reminder.cs",
+              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\VIEW\\UC\\reminder.cs",
+              "RelativeToolTip": "VIEW\\UC\\reminder.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwEUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:52:49.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TaskDAO.cs",
-              "DocumentMoniker": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\DAO\\TaskDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\TaskDAO.cs",
-              "ToolTip": "D:\\To Do List\\todolist\\todolist\\Todo-List-Group6\\DAO\\TaskDAO.cs",
-              "RelativeToolTip": "DAO\\TaskDAO.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:52:25.056Z",
+              "WhenOpened": "2024-08-11T09:52:43.945Z",
               "EditorCaption": ""
             }
           ]

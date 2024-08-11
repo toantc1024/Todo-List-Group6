@@ -28,14 +28,14 @@ namespace todolist.DAO
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             return dt;
         }
-        public void updateTask(int id,string StartTime,string EndTime, string Description,string Priority,bool IsChecked)
+        public void updateTask(int id,string StartTime,string EndTime,string Title, string Description,string Priority,bool IsChecked)
         {
-            string query = $"UPDATE Tasks SET StartTime = '{StartTime}', EndTime = '{EndTime}', Description = N'{Description}', Priority = '{Priority}', IsChecked = {(IsChecked ? 1 : 0)} WHERE Id = {id}";
+            string query = $"UPDATE Tasks SET StartTime = '{StartTime}', EndTime = '{EndTime}',Title ='{Title}' ,Description = N'{Description}', Priority = '{Priority}', IsChecked = {(IsChecked ? 1 : 0)} WHERE Id = {id}";
             DataProvider.Instance.ExecuteNonQuery(query);
         }
-        public int addTask(string StartTime,string EndTime, string Description, string Priority, bool isChecked)
+        public int addTask(string StartTime, string EndTime, string Title, string Description, string Priority, bool IsChecked)
         {
-            string query = $"INSERT INTO Tasks (StartTime, EndTime, Description, Priority, IsChecked) VALUES ('{StartTime}', '{EndTime}', N'{Description}', '{Priority}', {(isChecked ? 1 : 0)})";
+            string query = $"INSERT INTO Tasks (StartTime, EndTime, Title,Description, Priority, IsChecked) VALUES ('{StartTime}', '{EndTime}','{Title}', '{Description}', '{Priority}', {(IsChecked ? 1 : 0)})";
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result;
         }

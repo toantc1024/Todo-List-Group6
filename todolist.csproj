@@ -274,7 +274,7 @@
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\TaskDAO.cs" />
-    <Compile Include="TaskModel.cs" />
+    <Compile Include="Models\TaskModel.cs" />
     <Compile Include="TaskStateManager.cs" />
     <Compile Include="VIEW\Fmain.cs">
       <SubType>Form</SubType>

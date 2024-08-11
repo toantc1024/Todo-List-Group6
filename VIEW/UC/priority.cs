@@ -40,8 +40,9 @@ namespace todolist.VIEW.UC
                     string[] listViewRow =
                 {
                     row["Priority"].ToString(),
-                    taskDateTime.ToString("HH:mm:ss"),
-                    endDateTime.ToString("HH:mm:ss"),
+                    taskDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                    endDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                    row["Title"].ToString(),
                     row["Description"].ToString(),
                 };
                     var listViewItem = new ListViewItem(listViewRow);
@@ -59,7 +60,7 @@ namespace todolist.VIEW.UC
         private void SortHighestListViewByPriority()
         {
             var items = lvwPriority.Items.Cast<ListViewItem>().ToList();
-            var priorityOrder = new List<string> { "IV", "III", "II", "I",""};
+            var priorityOrder = new List<string> { "I", "II", "III", "IV",""};
             items = items.OrderBy(item => priorityOrder.IndexOf(item.SubItems[0].Text)).ToList();
             lvwPriority.Items.Clear();
             lvwPriority.Items.AddRange(items.ToArray());
@@ -73,7 +74,7 @@ namespace todolist.VIEW.UC
         private void SortLowestListViewByPriority()
         {
             var items = lvwPriority.Items.Cast<ListViewItem>().ToList();
-            var priorityOrder = new List<string> { "IV", "III", "II", "I", ""};
+            var priorityOrder = new List<string> { "I", "II", "III", "IV", ""};
             items = items.OrderByDescending(item => priorityOrder.IndexOf(item.SubItems[0].Text)).ToList();
             lvwPriority.Items.Clear();
             lvwPriority.Items.AddRange(items.ToArray());

@@ -38,8 +38,9 @@ namespace todolist.VIEW.UC
                 {
                     string[] listViewRow =
                     {
-                         taskDateTime.ToString("HH:mm:ss"),
-                         endDateTime.ToString("HH:mm:ss"),
+                         taskDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                         endDateTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                         row["Title"].ToString(),
                          row["Description"].ToString(),
                          row["Priority"].ToString(),
                      };
@@ -68,13 +69,11 @@ namespace todolist.VIEW.UC
             foreach (ListViewItem item in lvwMyPlan.Items)
             {
                 item.Checked = checkState;
-
-                // Cập nhật trạng thái checkbox vào cơ sở dữ liệu
                 string key = item.SubItems[0].Text + "|" + item.SubItems[1].Text;
-                int id = GetTaskIdByKey(key); // Cần phương thức để lấy id từ key
+                int id = GetTaskIdByKey(key); 
                 if (id > 0)
                 {
-                    TaskDAO.Instance.updateTask(id, item.SubItems[0].Text, item.SubItems[1].Text, item.SubItems[2].Text, item.SubItems[3].Text, checkState);
+                    TaskDAO.Instance.updateTask(id, item.SubItems[0].Text, item.SubItems[1].Text, item.SubItems[2].Text, item.SubItems[3].Text, item.SubItems[4].Text, checkState);
                 }
             }
         }
@@ -102,11 +101,7 @@ namespace todolist.VIEW.UC
         {
             ListViewItem item = e.Item;
             bool isChecked = item.Checked;
-
-            // Giả định bạn có một cách để lấy id của task từ ListViewItem. Có thể là từ Text hoặc Tag
-            int taskId = int.Parse(item.Tag.ToString()); // hoặc item.SubItems[x].Text nếu id là một trong các cột
-
-            // Cập nhật cơ sở dữ liệu với trạng thái mới của checkbox
+            int taskId = int.Parse(item.Tag.ToString()); 
             TaskDAO.Instance.UpdateTaskCheckedState(taskId, isChecked);
         }
     }
