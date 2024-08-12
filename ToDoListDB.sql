@@ -19,7 +19,7 @@ CREATE TABLE Tasks (
 	EndTime DATETIME,
 	Title NVARCHAR(255),
     Description NVARCHAR(MAX),
-	Priority varchar(5)
+	Priority varchar(5),
 	foreign key(id) references Tasks(id)
  );
 
@@ -43,6 +43,6 @@ VALUES
 
 ('2024-08-12 16:00:00', '2024-08-12 17:00:00', 'Entertainment', 'Prepare materials and content for the presentation.', 'I', 0),
 
-('2024-08-12 18:00:00', '2024-08-12 19:00:00', 'Personal Projects', 'Summarize and report on the day''s work.', 'IV', 0);
+('2024-08-12 18:00:00', '2024-08-12 19:00:00', 'Personal Projects', 'Summarize and report on the days work.', 'IV', 0);
 
 select * from Tasks
